@@ -9,6 +9,15 @@
       </h4>
       <p class="card-text"><%= event.content %></p>
       <hr />
+      <div class="mb-1">
+        <% if event.only_woman? %>
+          <div class="badge bg-secondary">
+            <span>
+                ☆女性限定☆
+              </span>
+          </div>
+        <% end %>
+      </div>
       <div class="d-flex justify-content-between">
         <div>
           <i class="bi bi-geo-alt"></i>
